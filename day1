@@ -3,7 +3,7 @@
 using namespace std;
 class bus
 {
-    char busn[10], drivern[10], from[20], to[20], date[10],arrival[5],departure[5];
+    string busn, drivern, from, to, date, arrival, departure;
     int busno, seatno, total_no_of_seats;
 
 public:
@@ -29,12 +29,12 @@ void bus::display()
     {
     case 1:
     {
-        bus::addbus();
+        bus::addbus(); 
         break;
     }
     case 2:
     {
-        bus::busdisp();
+        bus::busdisp(); \\not complete case statements 
         break;
     }
     case 3:
