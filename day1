@@ -57,3 +57,17 @@ void bus::display()
     }
     }
 }
+void bus::passengerinfo(){
+string name, phone;
+int age;
+char sex;
+cout<<"\n\t\tEnter Name:";
+cin>>name;
+cout<<"\n\t\tEnter Age:";
+cin>>age;
+cout<<"\n\t\tEnter sex(M/F):";
+cin>>sex;
+cout<<"\n\t\tEnter Phone no.:";
+cin>>phone;
+}
+
