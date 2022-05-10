@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+class bus
+{
+    char busn[10], drivern[10], from[20], to[20], date[10],arrival[5],departure[5];
+    int busno, seatno, total_no_of_seats;
+
+public:
+    void display();
+    void addbus();
+    void busdisp();
+    void seatchart();
+    void passengerinfo();
+    void ticket();
+};
+void bus::display()
+{
+    int choice;
+    cout << "                                 BUS TICKET BOOKING ONLINE\n";
+    cout << "                             -----------------------------------\n\n";
+    cout << "                             1. Add Bus\n";
+    cout << "                             2. Bus Reservation\n";
+    cout << "                             3. Show Seat Chart\n";
+    cout << "                             4. Exit\n";
+    cout << "                             ENTER CHOICE:";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+    {
+        bus::addbus();
+        break;
+    }
+    case 2:
+    {
+        bus::busdisp();
+        break;
+    }
+    case 3:
+    {
+        bus::seatchart();
+        break;
+    }
+    case 4:
+    {
+        break;
+    }
+    default:
+    {
+        cout << "                            ERROR! Please enter a valid choice.\n";
+        bus::display();
+        break;
+    }
+    }
+}
