@@ -54,3 +54,18 @@ void bus::display()
     }
     }
 }
+void bus::addbus()
+{
+ cout<<"\n\t\t Enter Driver's name";
+ gets(bus.drivern);
+ cout<<"\n\t\t Enter bus no"<<endl;
+ cin>>busno;
+ cout<<"\n\t\t Arrival time:";
+ gets(bus.arrival);
+ cout<<"\n\t\t Departure:";
+ gets(bus.departure);
+ cout<<"\n\t\t from:";
+ gets(bus.from);
+ cout<<"\n\t\t to:";
+ gets(bus.to);
+ }
