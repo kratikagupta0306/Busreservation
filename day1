@@ -35,7 +35,7 @@ void bus::display()
     }
     case 2:
     {
-        bus::busdisp(); \\not complete case statements 
+        bus::busdisp(); //not complete case statements 
         bus::display();
         break;
     }
