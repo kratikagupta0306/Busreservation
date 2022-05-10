@@ -30,16 +30,19 @@ void bus::display()
     case 1:
     {
         bus::addbus(); 
+        bus::display();
         break;
     }
     case 2:
     {
         bus::busdisp(); //not complete case statements 
+        bus::display();
         break;
     }
     case 3:
     {
         bus::seatchart();
+        bus::display();
         break;
     }
     case 4:
