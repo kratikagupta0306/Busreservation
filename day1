@@ -57,6 +57,12 @@ void bus::display()
     }
     }
 }
+void bus::ticket(){
+ cout<<"\n\t\t Bus name: "<<busn<<"\t\t Bus no: "<<busno;
+ cout<<"\n\t\t Driver's name: "<<drivern;
+ cout<<"\n\t\t Arrival time: "<<arrival<<"\t\t Departure time: "<<departure;
+ cout<<"\n\t\t From: "<<from<<"\t\t To: "<<to;
+ }
 void bus::passengerinfo(){
 string name, phone;
 int age;
