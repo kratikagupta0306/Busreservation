@@ -34,7 +34,7 @@ void bus::display()
     }
     case 2:
     {
-        bus::busdisp(); \\not complete case statements 
+        bus::busdisp(); //not complete case statements 
         break;
     }
     case 3:
@@ -58,13 +58,13 @@ void bus::passengerinfo(){
 string name, phone;
 int age;
 char sex;
-cout<<"Enter Name:";
+cout<<"\n\t\tEnter Name:";
 cin>>name;
-cout<<"Enter Age:";
+cout<<"\n\t\tEnter Age:";
 cin>>age;
-cout<<"Enter sex(M/F):";
+cout<<"\n\t\tEnter sex(M/F):";
 cin>>sex;
-cout<<"Enter Phone no.:";
+cout<<"\n\t\tEnter Phone no.:";
 cin>>phone;
 }
 
