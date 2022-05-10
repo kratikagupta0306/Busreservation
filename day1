@@ -54,3 +54,11 @@ void bus::display()
     }
     }
 }
+void bus::ticket()
+{
+ cout<<"\n\t\t Bus name: "<<bus.busn<<"\t\t Bus no: "<<bus.busno;
+ cout<<"\n\t\t Driver's name: "<<bus.drivern;
+ cout<<"\n\t\t Arrival time: "<<bus.arrival<<"\t\t Departure time: "<<bus.departure;
+ cout<<"\n\t\t From: "<<bus.from<<"\t\t To: <<bus.to;
+ }
+                        
