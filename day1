@@ -35,8 +35,9 @@ void bus::display()
     }
     case 2:
     {
-        bus::busdisp(); //not complete case statements 
+        bus::busdisp(); // not complete case statements 
         bus::display();
+
         break;
     }
     case 3:
@@ -57,6 +58,21 @@ void bus::display()
     }
     }
 }
+void bus::addbus()
+{
+ cout<<"\n\t\t Enter Driver's name";
+ cin>>(drivern);
+ cout<<"\n\t\t Enter bus no"<<endl;
+ cin>>busno;
+ cout<<"\n\t\t Arrival time:";
+ cin>>(arrival);
+ cout<<"\n\t\t Departure:";
+ cin>>(departure);
+ cout<<"\n\t\t from:";
+ cin>>(from);
+ cout<<"\n\t\t to:";
+ cin>>(to);
+ }
 void bus::ticket(){
  cout<<"\n\t\t Bus name: "<<busn<<"\t\t Bus no: "<<busno;
  cout<<"\n\t\t Driver's name: "<<drivern;
