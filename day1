@@ -58,6 +58,21 @@ void bus::display()
     }
     }
 }
+
+void bus::seatchart(){
+int i,j,n=1;
+for(i=1;i<=12;i++){
+    for (j=1;j<=6;j++){
+    if (j<3||j>3){
+    cout<<"\t\t\t"<<n<<"\t";
+    n++;
+    }
+    else
+    cout<<"\t\t\t\t\t\t";
+    }
+    cout<<"\n";
+}
+}
 void bus::addbus()
 {
  cout<<"\n\t\t Enter Driver's name";
@@ -92,4 +107,3 @@ cin>>sex;
 cout<<"\n\t\tEnter Phone no.:";
 cin>>phone;
 }
-
