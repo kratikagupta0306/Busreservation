@@ -30,16 +30,20 @@ void bus::display()
     case 1:
     {
         bus::addbus(); 
+        bus::display();
         break;
     }
     case 2:
     {
-        bus::busdisp(); \\not complete case statements 
+        bus::busdisp(); // not complete case statements 
+        bus::display();
+
         break;
     }
     case 3:
     {
         bus::seatchart();
+        bus::display();
         break;
     }
     case 4:
@@ -54,6 +58,7 @@ void bus::display()
     }
     }
 }
+
 void bus::seatchart(){
 int i,j,n=1;
 for(i=1;i<=12;i++){
@@ -67,4 +72,38 @@ for(i=1;i<=12;i++){
     }
     cout<<"\n";
 }
+}
+void bus::addbus()
+{
+ cout<<"\n\t\t Enter Driver's name";
+ cin>>(drivern);
+ cout<<"\n\t\t Enter bus no"<<endl;
+ cin>>busno;
+ cout<<"\n\t\t Arrival time:";
+ cin>>(arrival);
+ cout<<"\n\t\t Departure:";
+ cin>>(departure);
+ cout<<"\n\t\t from:";
+ cin>>(from);
+ cout<<"\n\t\t to:";
+ cin>>(to);
+ }
+void bus::ticket(){
+ cout<<"\n\t\t Bus name: "<<busn<<"\t\t Bus no: "<<busno;
+ cout<<"\n\t\t Driver's name: "<<drivern;
+ cout<<"\n\t\t Arrival time: "<<arrival<<"\t\t Departure time: "<<departure;
+ cout<<"\n\t\t From: "<<from<<"\t\t To: "<<to;
+ }
+void bus::passengerinfo(){
+string name, phone;
+int age;
+char sex;
+cout<<"\n\t\tEnter Name:";
+cin>>name;
+cout<<"\n\t\tEnter Age:";
+cin>>age;
+cout<<"\n\t\tEnter sex(M/F):";
+cin>>sex;
+cout<<"\n\t\tEnter Phone no.:";
+cin>>phone;
 }
